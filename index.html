@@ -4,10 +4,11 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Sistema solare</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./src/css/main.css" />
 
+    <title>Sistema solare con tag semantici</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./src/css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,42 +18,52 @@
 
   <body>
 
-    <header>
+    <header id="c-header">
         <h1>IL SISTEMA SOLARE</h1>
     </header>
 
     <main>
+      <section id="c-sectionIntro">
+        <header id="c-sectionIntro__header">
+          <hgroup>
+            <h2>Informazioni sul sistema solare</h2>
+            <h3>(Wikipedia)</h3>
+          </hgroup>
+        </header>
 
-      <section id="c-principale">
-        <h2>Informazioni sul sistema solare</h2>
         <article>
-          <p><strong>Il sistema solare</strong> è un sistema planetario costituito
-          da una varietà di corpi celesti mantenuti in orbita dalla forza
-          gravitazionale del Sole; ha un diametro di circa 120-130 au -
-          0,0019 anni luce, inteso come la zona dello spazio che è sottoposta al
-          vento solare, tralasciando l'immensa zona sottoposta alla sola gravità
-          solare.
+          <p>
+            <strong>Il sistema solare</strong> è un sistema planetario costituito
+            da una varietà di corpi celesti mantenuti in orbita dalla forza
+            gravitazionale del Sole; ha un diametro di circa 120-130 au -
+            0,0019 anni luce, inteso come la zona dello spazio che è sottoposta al
+            vento solare, tralasciando l'immensa zona sottoposta alla sola gravità
+            solare.
           </p>
           <br>
-          <p>È situato nel braccio di Orione della Via Lattea e orbita attorno al
+          <p>
+            È situato nel braccio di Orione della Via Lattea e orbita attorno al
             centro galattico a una distanza di circa 26700 anni luce e una
             velocità di 230 km/s;[2] si stima che il sistema solare impieghi circa
             225-250 milioni di anni per completare un giro attorno al centro
             galattico.
           </p>
           <br>
-          Gli otto pianeti sono:
-          <ul id="c-listaPianeti">
-            <li>Mercurio</li>
-            <li>Venere</li>
-            <li>Terra</li>
-            <li>Marte</li>
-            <li>Saturno</li>
-            <li>Urano</li>
-            <li>Nettuno</li>
-          </ul>
-          <br>
-          I cinque pianeti nani sono: Cerere, Plutone eccetera...
+          
+          <details>
+            <summary>Gli otto pianeti sono:</summary>
+              <ul id="c-listaPianeti">
+                <li>Mercurio</li>
+                <li>Venere</li>
+                <li>Terra</li>
+                <li>Marte</li>
+                <li>Saturno</li>
+                <li>Urano</li>
+                <li>Nettuno</li>
+              </ul>
+              <br>
+              I cinque pianeti nani sono: Cerere, Plutone eccetera...
+          </details>
         </article>
       </section>
 
@@ -61,7 +72,7 @@
         <div class="c-pianeti__descrizione c-pianeti__descrizione--bordo">
           Mercurio, il più piccolo pianeta terrestre ed il più vicino al Sole, presenta una densità maggiore rispetto agli altri pianeti ed è caratterizzato da un periodo di rotazione pari a 59 giorni terrestri e di rivoluzione di 88,97 giorni terrestri. La temperatura di Mercurio nelle zone investite dai raggi solari raggiunge circa i 700 K a causa dell’enorme vicinanza al Sole e della lentezza del moto di rotazione.
         </div>
-        <div class="c-pianeti__footer">Altre informazioni</div>
+        <footer class="c-pianeti__footer"><time datetime="2025-01-18" pubdate="2025-01-18">11 gennaio 2025</time></footer>
       </article>
 
       <article class="c-pianeti">
@@ -69,7 +80,7 @@
         <div class="c-pianeti__descrizione c-pianeti__descrizione--bordo">
           Mercurio, il più piccolo pianeta terrestre ed il più vicino al Sole, presenta una densità maggiore rispetto agli altri pianeti ed è caratterizzato da un periodo di rotazione pari a 59 giorni terrestri e di rivoluzione di 88,97 giorni terrestri. La temperatura di Mercurio nelle zone investite dai raggi solari raggiunge circa i 700 K a causa dell’enorme vicinanza al Sole e della lentezza del moto di rotazione. 
         </div>
-        <div class="c-pianeti__footer">Altre informazioni</div>
+        <footer class="c-pianeti__footer"><time datetime="2025-01-18" pubdate="2025-01-18">11 gennaio 2025</time></footer>
       </article>
 
       <article class="c-pianeti">
@@ -77,7 +88,7 @@
         <div class="c-pianeti__descrizione c-pianeti__descrizione--bordo">
           Mercurio, il più piccolo pianeta terrestre ed il più vicino al Sole, presenta una densità maggiore rispetto agli altri pianeti ed è caratterizzato da un periodo di rotazione pari a 59 giorni terrestri e di rivoluzione di 88,97 giorni terrestri. La temperatura di Mercurio nelle zone investite dai raggi solari raggiunge circa i 700 K a causa dell’enorme vicinanza al Sole e della lentezza del moto di rotazione.
         </div>
-        <div class="c-pianeti__footer">Altre informazioni</div>
+        <footer class="c-pianeti__footer"><time datetime="2025-01-18" pubdate="2025-01-18">11 gennaio 2025</time></footer>
       </article>
   
       <article class="c-pianeti">
@@ -85,7 +96,7 @@
         <div class="c-pianeti__descrizione c-pianeti__descrizione--bordo">
           Mercurio, il più piccolo pianeta terrestre ed il più vicino al Sole, presenta una densità maggiore rispetto agli altri pianeti ed è caratterizzato da un periodo di rotazione pari a 59 giorni terrestri e di rivoluzione di 88,97 giorni terrestri. La temperatura di Mercurio nelle zone investite dai raggi solari raggiunge circa i 700 K a causa dell’enorme vicinanza al Sole e della lentezza del moto di rotazione.
         </div>
-        <div class="c-pianeti__footer">Altre informazioni</div>
+        <footer class="c-pianeti__footer"><time datetime="2025-01-18" pubdate="2025-01-18">11 gennaio 2025</time></footer>
       </article>
 
       <article class="c-pianeti">
@@ -93,7 +104,7 @@
         <div class="c-pianeti__descrizione c-pianeti__descrizione--bordo">
           Mercurio, il più piccolo pianeta terrestre ed il più vicino al Sole, presenta una densità maggiore rispetto agli altri pianeti ed è caratterizzato da un periodo di rotazione pari a 59 giorni terrestri e di rivoluzione di 88,97 giorni terrestri. La temperatura di Mercurio nelle zone investite dai raggi solari raggiunge circa i 700 K a causa dell’enorme vicinanza al Sole e della lentezza del moto di rotazione.
         </div>
-        <div class="c-pianeti__footer">Altre informazioni</div>
+        <footer class="c-pianeti__footer"><time datetime="2025-01-18" pubdate="2025-01-18">11 gennaio 2025</time></footer>
       </article>
 
       <article class="c-pianeti">
@@ -101,29 +112,29 @@
         <div class="c-pianeti__descrizione c-pianeti__descrizione--bordo">
           Mercurio, il più piccolo pianeta terrestre ed il più vicino al Sole, presenta una densità maggiore rispetto agli altri pianeti ed è caratterizzato da un periodo di rotazione pari a 59 giorni terrestri e di rivoluzione di 88,97 giorni terrestri. La temperatura di Mercurio nelle zone investite dai raggi solari raggiunge circa i 700 K a causa dell’enorme vicinanza al Sole e della lentezza del moto di rotazione.
         </div>
-        <div class="c-pianeti__footer">Altre informazioni</div>
+        <footer class="c-pianeti__footer"><time datetime="2025-01-18" pubdate="2025-01-18">11 gennaio 2025</time></footer>
       </article>
 
-      <article class="c-pianeti">
-        <h3 id="c-pianeti__titolo">URANO</h3>
-        <div class="c-pianeti__descrizione c-pianeti__descrizione--bordo">
-          Mercurio, il più piccolo pianeta terrestre ed il più vicino al Sole, presenta una densità maggiore rispetto agli altri pianeti ed è caratterizzato da un periodo di rotazione pari a 59 giorni terrestri e di rivoluzione di 88,97 giorni terrestri. La temperatura di Mercurio nelle zone investite dai raggi solari raggiunge circa i 700 K a causa dell’enorme vicinanza al Sole e della lentezza del moto di rotazione.
-        </div>
-        <div class="c-pianeti__footer">Altre informazioni</div>
-      </article>
+        <article class="c-pianeti">
+          <h3 id="c-pianeti__titolo">URANO</h3>
+          <div class="c-pianeti__descrizione c-pianeti__descrizione--bordo">
+            Mercurio, il più piccolo pianeta terrestre ed il più vicino al Sole, presenta una densità maggiore rispetto agli altri pianeti ed è caratterizzato da un periodo di rotazione pari a 59 giorni terrestri e di rivoluzione di 88,97 giorni terrestri. La temperatura di Mercurio nelle zone investite dai raggi solari raggiunge circa i 700 K a causa dell’enorme vicinanza al Sole e della lentezza del moto di rotazione.
+          </div>
+          <footer class="c-pianeti__footer"><time datetime="2025-01-18" pubdate="2025-01-18">11 gennaio 2025</time></footer>
+        </article>
 
-      <article class="c-pianeti">
-        <h3 id="c-pianeti__titolo">NETTUNO</h3>
-        <div class="c-pianeti__descrizione c-pianeti__descrizione--bordo">
-          Mercurio, il più piccolo pianeta terrestre ed il più vicino al Sole, presenta una densità maggiore rispetto agli altri pianeti ed è caratterizzato da un periodo di rotazione pari a 59 giorni terrestri e di rivoluzione di 88,97 giorni terrestri. La temperatura di Mercurio nelle zone investite dai raggi solari raggiunge circa i 700 K a causa dell’enorme vicinanza al Sole e della lentezza del moto di rotazione.
-        </div>
-        <div class="c-pianeti__footer">Altre informazioni</div>
-      </article>
+        <article class="c-pianeti">
+          <h3 id="c-pianeti__titolo">NETTUNO</h3>
+          <div class="c-pianeti__descrizione c-pianeti__descrizione--bordo">
+            Mercurio, il più piccolo pianeta terrestre ed il più vicino al Sole, presenta una densità maggiore rispetto agli altri pianeti ed è caratterizzato da un periodo di rotazione pari a 59 giorni terrestri e di rivoluzione di 88,97 giorni terrestri. La temperatura di Mercurio nelle zone investite dai raggi solari raggiunge circa i 700 K a causa dell’enorme vicinanza al Sole e della lentezza del moto di rotazione.
+          </div>
+          <footer class="c-pianeti__footer"><time datetime="2025-01-18" pubdate="2025-01-18">11 gennaio 2025</time></footer>
+        </article>
 
     </main>
 
-    <footer>
-      Copyright&#169; Alex 2025
+    <footer id="c-footer">
+      &#169; 2025 ALEX
     </footer>
 
   </body>

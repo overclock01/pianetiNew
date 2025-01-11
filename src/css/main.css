@@ -1,3 +1,4 @@
+/* Proprietà principali */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,29 +14,37 @@ main {
     margin: 20px;
     font-size: 0;
 }
-main > * {font-size: 18px;}
 
-header {
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
+/* Propietà comuni */
+#c-header, #c-footer {
+    text-align: center;
     background-color: #3c5669;
     color: white;
+}
+
+/* Header */
+#c-header {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
     /* text-align: center; */
     /* height: 300px;
     line-height: 300px; */
 }
 
-header > h1 {
+#c-header > h1 {
     /* display: inline-block; */
     text-align: center;
     height: 300px;
     line-height: 300px;
     font-size: 60px;
-    /* border: 1px solid black; */
     text-shadow: -5px -5px 15px rgba(0, 0, 0, 0.8)
 }
 
-#c-principale {
+/* Main */
+main > * {font-size: 18px;} /* Precedentemente impostato a 0 */
+
+/* Section principale */
+#c-sectionIntro {
     margin-bottom: 25px;
     padding: 15px;
     width: 100%;
@@ -43,16 +52,22 @@ header > h1 {
     background-color: #4ea5ab;
 }
 
-#c-principale > h2 {
-    text-align: center;
+#c-sectionIntro__header h2 {
     font-size: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
-#c-principale article ul {
+#c-sectionIntro__header h3 {
+    margin-bottom: 25px;
+    color: #3b3939;
+}
+#c-sectionIntro__header h2, h3 {text-align: center;}
+
+#c-sectionIntro article ul {
     margin-top: 15px;
 }
 
+/* Article pianeti */
 #c-listaPianeti li {
     list-style-image: url("./../../assets/img/pianeta.png");
 }
@@ -89,13 +104,12 @@ header > h1 {
     padding: 5px;
 }
 
-footer {
+/* Footer */
+#c-footer {
     margin-top: 25px;
     line-height: 50px;
     border-top: 3px solid black;
-    text-align: center;
     font-size: 22px;
-    background-color: #3c5669;
-    color: white;
+
 }
 
