@@ -160,7 +160,7 @@ main > * {font-size: 18px;} /* Precedentemente impostato a 0 */
 /* END - Footer */
 
 /* BEGIN - MEDIA QUERIES */
-@media (min-width: 420px) and (max-width: 800px) {
+@media (min-width: 300px) and (max-width: 768px) {
 
     .c-pianeti {
         width: 100%;
