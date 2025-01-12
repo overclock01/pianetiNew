@@ -7,91 +7,90 @@
     <title>Document</title>
 
     <style>
+
         * {
-            /* width: 300px; */
-            /* height: 500px; */
-            margin: 0;
+            box-sizing: border-box;
         }
 
         body {
-            font-size: 16px;
+            margin: 0;
         }
 
-        /* div { */
-            /* width: 100%;
-            height: 100%; */
-            /* height: 50vh; */
-            /* width: 100vw; */
-/*             background-color: rgb(151, 88, 12);
-            line-height:100vh;
+        div.container {
+            border: 3px solid red;
+            /* overflow: auto; */
+            /* overflow: hidden; */
+        }
+
+        div.container div[class^="container__element"] {
+            border: 3px solid black;
             text-align: center;
-            font-size: 100px; */
-           /*  border: 1px solid red; */
-            /* background-image: linear-gradient(#84939e, #000000); */
-       /*  } */
+            min-height: 100px;
+            line-height: 100px;
+            font-size: 30px;
+            float: left;
+            /* width: calc(33.33333% - 40px / 3); */
+            width: 33.33333%;
+        }
 
-        /* h1 { */
-            /* font-size: 7.491em; */
-/*             font-size: 1em;
+        div.container div.container__element3 {
+            width: 50%;
         }
-        h2 {
-            font-size: 5.619em;
+
+/* 
+        div.container div.container__element2 {
+            float: left;
         }
-        h3 {
-            font-size: 4.214em;
+
+        div.container div.container__element3 {
+            float: right;
         }
-        h4 {
-            font-size: 3.16em;
-        }
-        h5 {
-            font-size: 2.37em;
-        }
-        h6 {
-            font-size: 1.778em;
+
+         div.container div.container__element1 {
+            display: inline-block;
+        } */
+ 
+
+
+/*         div.container div.container__element3 {
+            margin-right: 20px;
         } */
 
-        div.primo, div.secondo {
-            border: 1px solid red;
+        /* div.container div:not(:last-of-type) { */
+/*         div.container div:first-of-type, div.container div:nth-of-type(2) {
+            margin-right: 20px;
+        } */
+
+/*         div.container div.container__element2 {
+            float: right;
+            margin-right: 0;
+        } */
+
+/*         .dopo-float {
+            height: 300px;
+            background-color: blueviolet;
+        } */
+
+/*         .container__element4 {
+            clear: left;
+        } */
+
+        .clearfix {
+            clear: both;
         }
-
-       div.primo p {
-        font-size: 1.2em;
-       }
-
-       div.primo span{
-            font-size: 1.2em;
-       }
-
-       div.secondo p {
-        font-size: 1em;
-       }
-
-       div.secondo span{
-            font-size: 0.8em;
-       }
-    
-
     </style>
 </head>
 
 <body>
-    <div class="primo">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore porro, ducimus odit consequuntur et temporibus iure quibusdam illo, possimus magnam consectetur, perspiciatis unde quidem culpa rerum numquam incidunt earum. Veniam.
-            <span>Questa è una prova...</span>
-        </p>
+    <div class="container">
+        <div class="container__element1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores earum, culpa delectus porro voluptatem, labore iure odio in cum ratione vitae error, cupiditate minus pariatur molestiae cumque assumenda! Necessitatibus, odit!</div>
+        <div class="container__element2">Div2</div>
+        <div class="container__element3">Div3</div>
+        <div class="clearfix"></div>
     </div>
-    <div class="secondo">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore porro, ducimus odit consequuntur et temporibus iure quibusdam illo, possimus magnam consectetur, perspiciatis unde quidem culpa rerum numquam incidunt earum. Veniam.
-            <span>Questa è una prova...</span>
-        </p>
-    </div>
-    <div>
-        <h1>PIPPO</h1>
-        <h2>PIPPO</h2>
-        <h3>PIPPO</h3>
-        <h4>PIPPO</h4>
-        <h5>PIPPO</h5>
-        <h6>PIPPO</h6>
-    </div>
+
+
+    <!-- <div class="dopo-float"></div> -->
+<!--     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi molestiae ipsum id cum. Dolorum velit blanditiis dignissimos. Placeat, voluptates fugiat nostrum, aperiam, necessitatibus culpa voluptas porro reiciendis architecto libero quam.</p> -->
 </body>
 </html>
