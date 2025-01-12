@@ -4,16 +4,60 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Sistema solare con tag semantici</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="./src/css/main.css" />
+    <!-- RESPONSIVE MEDIA QUERIES -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- TAG META SEO -->
+    <meta name="description" content="Descrizione del sito" />
+    <meta name="keywords" content="parolaChiave1, parolaChiave2, parolaChiave3, eccetera" />
+    <meta name="author" content="Nome" />
+    <meta name="copyright" content="Nome" />
+
+    <!-- REFRESH E REINDIRIZZAMENTO -->
+    <!-- <meta http-equiv="refresh" content="5">
+    <meta http-equiv="refresh" content="5;url=#"> -->
+
+    <!-- GUIDA OPEN GRAPH PROTOCOL: https://ahrefs.com/blog/open-graph-meta-tags/#what-are-open-graph-tags-->
+    <meta property="og:title" content="Titolo" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://nomesito/img/image.png" />
+    <meta property="og:url" content="https://nomeDelSito/" />
+    <meta property="og:description" content="Descrizione del sito" />
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:site_name" content="Nome del sito" />
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Titolo del sito" />
+    <meta name="twitter:description" content="Descrizione del sito" />
+    <meta name="twitter:image" content="http://nomesito/img/image.png" />
+
+    <!-- GOOGLE FONTS -->
+    <!-- INCLUDERE SOLTANTO LE VARIANTI NECESSARIE -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet" />
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./assets/img/pianeta.png" />
+
+    <!-- STYLESHEETS -->
+    <!-- 1. Normalizza o resetta gli stili di base tra i browser -->
+    <!-- <link rel="stylesheet" href="./src/css/reset.css" /> -->
+    <!-- 2. Definisce il layout generale della pagina -->
+    <!-- <link rel="stylesheet" href="./src/css/layout.css" /> -->
+    <!-- 3. Stili per componenti riutilizzabili (bottoni, form, etc.) -->
+    <!-- <link rel="stylesheet" href="./src/css/components.css" /> -->
+    <!-- 4. Definisce il tema visivo (colori, tipografie, etc.) -->
+    <!-- <link rel="stylesheet" href="./src/css/theme.css" /> -->
+    <!-- 5. Stili principali specifici per il progetto -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./src/css/main.css" />
+    <!-- 6. Media Queries specifiche per il design responsive -->
+    <!-- <link rel="stylesheet" href="./src/css/responsive.css" /> -->
   </head>
 
   <body>
@@ -53,13 +97,14 @@
           <details>
             <summary>Gli otto pianeti sono:</summary>
               <ul id="c-listaPianeti">
-                <li>Mercurio</li>
-                <li>Venere</li>
-                <li>Terra</li>
-                <li>Marte</li>
-                <li>Saturno</li>
-                <li>Urano</li>
-                <li>Nettuno</li>
+                <li><span class="c-pointer">Mercurio</span></li>
+                <li><span class="c-pointer">Venere</span></li>
+                <li><span class="c-pointer">Venere</span></li>
+                <li><span class="c-pointer">Terra</span></li>
+                <li><span class="c-pointer">Marte</span></li>
+                <li><span class="c-pointer">Saturno</span></li>
+                <li><span class="c-pointer">Urano</span></li>
+                <li><span class="c-pointer">Nettuno</span></li>
               </ul>
               <br>
               I cinque pianeti nani sono: Cerere, Plutone eccetera...

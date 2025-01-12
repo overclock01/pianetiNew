@@ -1,4 +1,10 @@
-/* Proprietà principali */
+@support not (gap:5px) {
+    /* regole sostitutive */
+    /* regole sostitutive */
+    /* regole sostitutive */
+}
+
+/* BEGIN - Impostazioni generali */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +12,7 @@
 
 body {
     font-family: "Open Sans", serif;
-    background-color: #F5F5F5;
+    background-color:aliceblue;
     color: rgb(34, 34, 34);
 }
 
@@ -14,21 +20,28 @@ main {
     margin: 20px;
     font-size: 0;
 }
+/* END - Impostazioni generali */
 
-/* Propietà comuni */
+/* BEGIN - Propietà comuni */
 #c-header, #c-footer {
     text-align: center;
     background-color: #3c5669;
-    color: white;
+    color:aliceblue;
 }
 
-/* Header */
+#c-header, #c-sectionIntro, .c-pianeti, #c-footer {
+    box-shadow: 1px 5px 100px rgb(93, 144, 144), 1px 5px 100px rgb(51, 84, 84);
+}
+/* END - Propietà comuni */
+
+/* BEGIN - Header */
 #c-header {
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    /* text-align: center; */
-    /* height: 300px;
-    line-height: 300px; */
+    margin: auto;
+    margin-top: 30px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background-image: radial-gradient(circle closest-side, #97a2ad, #222d33)
+    /* border-radius: 50px; */
 }
 
 #c-header > h1 {
@@ -39,22 +52,27 @@ main {
     font-size: 60px;
     text-shadow: -5px -5px 15px rgba(0, 0, 0, 0.8)
 }
+/* END - Header */
 
-/* Main */
+                                /*** BEGIN - Main ***/
+
 main > * {font-size: 18px;} /* Precedentemente impostato a 0 */
 
-/* Section principale */
+/* BEGIN - Section principale */
 #c-sectionIntro {
+    border-radius: 30px;
     margin-bottom: 25px;
     padding: 15px;
+    border: 1px solid white;
     width: 100%;
-    border: 3px solid black;
     background-color: #4ea5ab;
+    background-image: linear-gradient(to top left, #4ea5ab, #70abaf, #2a2b2b);
 }
 
 #c-sectionIntro__header h2 {
-    font-size: 40px;
     margin-bottom: 0;
+    font-size: 36px;
+    color:aliceblue;
 }
 
 #c-sectionIntro__header h3 {
@@ -67,24 +85,32 @@ main > * {font-size: 18px;} /* Precedentemente impostato a 0 */
     margin-top: 15px;
 }
 
-/* Article pianeti */
+.c-pointer:hover {
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+}
+/* END - Section principale */
+
+/* BEGIN - Article pianeti */
 #c-listaPianeti li {
     list-style-image: url("./../../assets/img/pianeta.png");
 }
 
 .c-pianeti {
+    margin: 10px;
     border: 1px solid black;
     width: calc(33% - 20px);
     display: inline-block;
-    margin: 10px;
 }
 
 #c-pianeti__titolo {
+    padding: 5px;
     font-weight: bold;
     text-align: center;
     font-size:24px;
-    padding: 5px;
     background-color: #6990ab;
+    color:aliceblue;
  }
 
 .c-pianeti__descrizione {
@@ -98,18 +124,36 @@ main > * {font-size: 18px;} /* Precedentemente impostato a 0 */
 }
 
 .c-pianeti__footer {
+    padding: 5px;
     text-align: center;
     font-size: 20px;
     background-color: #758a99;
-    padding: 5px;
+    color: black;
 }
 
-/* Footer */
+.c-pianeti, #c-pianeti__titolo, .c-pianeti__footer {
+    border-radius: 30px;
+}
+
+#c-pianeti__titolo {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;   
+}
+
+.c-pianeti__footer {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;   
+}
+/* END - Article pianeti */
+
+                                    /*** END - Main ***/
+
+/* BEGIN - Footer */
 #c-footer {
     margin-top: 25px;
+    border-top: 3px solid white;
     line-height: 50px;
-    border-top: 3px solid black;
-    font-size: 22px;
-
+    font-size: 16px;
+    background-image: linear-gradient(to top left, #4ea5ab, #70abaf, #2a2b2b);
 }
-
+/* END - Footer */
