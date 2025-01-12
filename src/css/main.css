@@ -102,6 +102,7 @@ main > * {font-size: 18px;} /* Precedentemente impostato a 0 */
     border: 1px solid black;
     width: calc(33% - 20px);
     display: inline-block;
+    overflow: hidden;
 }
 
 #c-pianeti__titolo {
@@ -157,3 +158,18 @@ main > * {font-size: 18px;} /* Precedentemente impostato a 0 */
     background-image: linear-gradient(to top left, #4ea5ab, #70abaf, #2a2b2b);
 }
 /* END - Footer */
+
+/* BEGIN - MEDIA QUERIES */
+@media (min-width: 420px) and (max-width: 800px) {
+
+    .c-pianeti {
+        width: 100%;
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    #c-header > h1 {
+        font-size: 30px;
+    }
+  }
+/* END - MEDIA QUERIES*/
